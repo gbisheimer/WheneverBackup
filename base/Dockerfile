@@ -7,6 +7,6 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN gem install whenever backup && \
 apt-get udpate && \
 apt-get install -y --no-install-recommends supervisor && \
-rm -rf /var/lib/apt/lists/* && \
+rm -rf /var/lib/apt/lists/*
 
 CMD ["/usr/bin/supervisord"]
