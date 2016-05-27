@@ -5,7 +5,7 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Instalo gemas para manejo de backups
 RUN gem install whenever backup && \
-apt-get udpate && \
+apt-get update && \
 apt-get install -y --no-install-recommends supervisor && \
 rm -rf /var/lib/apt/lists/*
 
